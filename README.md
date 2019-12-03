@@ -62,17 +62,19 @@ In this part, customer data will be divided into groups of individuals that are 
 
 * Summary statistics 
 
-![image alt text](image_0.png)
+![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jaok6szhj30yq0duac4.jpg)
+
 
 *  Order hours of the day
 
-![image alt text](image_1.png)
+
+![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jaq73sqxj30bl09f3yn.jpg)
 
 People always place orders between 8 a.m. and 9 p.m.
 
 * Order day of week
 
-![image alt text](image_2.png)
+![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jar2gcgdj30bb097mx5.jpg)
 
 Most of the people place orders on Sunday.
 
@@ -80,7 +82,7 @@ Most of the people place orders on Sunday.
 
 *   When do customers order again?
 
-![image alt text](image_3.png)
+![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jarfehfoj30jf0g13z3.jpg)
 
 Some people prefer to do online shopping each week. But most of the people prefer to place an order again after one month.
 
@@ -90,17 +92,17 @@ Some people prefer to do online shopping each week. But most of the people prefe
 
 * Summary statistics
 
-![image alt text](image_4.png)
+![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jas7q49sj310m08lmye.jpg)
 
 *  How many items do people buy in one order?
 
-![image alt text](image_5.png)
+![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jat26umij30b609faa9.jpg)
 
 People always buy approximately 5 items once.
 
 *  Bestseller
 
-![image alt text](image_6.png)
+![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jatkzvf6j30cf0agjru.jpg)
 
 As is shown in the picture, Banana is the bestseller. Since fruits and vegetables are customers’ daily needs, the top 10 bestsellers are all fruit and vegetables.
 
@@ -116,7 +118,7 @@ More than half of the products will be reordered.
 
 **3.   **Product factor analysis
 
-![image alt text](image_7.png)
+![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jau9adv3j31120b6dhk.jpg)
 
 The 1st 8 factors explained 54% of the total variance.
 
@@ -130,7 +132,7 @@ Eigenvalues for the 8th factor > 1 while that of 9th factors are <1
 
 8 factors are suggested.
 
- ![image alt text](image_8.png)
+![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jaunep45j30fe09pmxb.jpg)
 
 Scree plot shows the eigenvalue for the number of factors.:
 
@@ -140,7 +142,7 @@ An elbow is observed at 3
 
 8 factors solution:
 
-![image alt text](image_9.png)
+![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9javdmjoqj30yq0jhjum.jpg)
 
 Factor 1: produce, bakery, canned goods, personal care, meat seafood, breakfast load highly and positively
 
@@ -162,7 +164,7 @@ Factor 8: International, dry goods
 
 Rotated loadings
 
-![image alt text](image_10.png)
+![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9javv4zicj30ka0buq4j.jpg)
 
 Pasta, other, alcohol and household are correlated
 
@@ -178,7 +180,7 @@ Frozen on its own
 
 6 cluster solution on factor scores (including no strong characteristic)
 
-![image alt text](image_11.png)
+![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jaxw7auoj30du085wfa.jpg)
 
 **4. **Customer segmentation cluster analysis
 
@@ -186,17 +188,16 @@ Frozen on its own
 
 Summary Statistic:
 
-![image alt text](image_12.png)
-
+![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jayf2eg8j30aa01mmxb.jpg)
  Frequency of gender:
 
- ![image alt text](image_13.png)
+![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jayrdhpjj309t05xmwy.jpg)
 
 The majority of customers is female.
 
 Age variable distribution:
 
-![image alt text](image_14.png)
+![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jaz3z1j4j30a209274s.jpg)
 
 It is clear that the target age groups are 30-35 for both female and male. Women in their 40s do online shopping frequently.
 
@@ -212,7 +213,8 @@ It is clear that the target age groups are 30-35 for both female and male. Women
 
 * We choose 4 clusters
 
-![image alt text](image_15.png)![image alt text](image_16.png)
+![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jb06k1zvj30gc0ra74y.jpg)
+![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jb0jksa2j30tg0lqmy8.jpg)
 
 * Cluster solutions:
 
@@ -222,11 +224,11 @@ It is clear that the target age groups are 30-35 for both female and male. Women
 
     * Means and standardized values for the five clustered analysis:
 
-![image alt text](image_17.png)
+![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jb0xg35mj30lc0acq3n.jpg)
 
 * Finally, we plot out the values under different clusters to intuitively visualize the result:
 
-![image alt text](image_18.png)
+![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jb18l607j30z80reta4.jpg)
 
 **(Ward’s method)**
 
@@ -236,7 +238,8 @@ It is clear that the target age groups are 30-35 for both female and male. Women
 
 * Plot of dendrogram 
 
-![image alt text](image_19.png)![image alt text](image_20.png)
+![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jb1rt7nzj30py0r4aat.jpg)
+![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jb23nm4dj30q40pmq3r.jpg)
 
 * Cluster solution:
 
@@ -244,15 +247,15 @@ It is clear that the target age groups are 30-35 for both female and male. Women
 
 * We derive the number of trials in cluster C1-C5 is: 23, 20, 84, 38, 35;
 
-![image alt text](image_21.png)
+![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jb2myelbj30m40f074v.jpg)
 
 * Means and standardized values for the five clustered analysis: 
 
-![image alt text](image_22.png)
+![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jb2z5vu9j30rq0c6dgr.jpg)
 
 * Finally, we plot out the values under different clusters to intuitively visualize the result:
 
-![image alt text](image_23.png)
+![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jb3kbt61j30vm0regmz.jpg)
 
 * Conclusions on hierarchical cluster analysis:
 
@@ -286,15 +289,15 @@ i) Segmentation using age, income and spending score
 
 In order to find the best K for K-means algorithm, elbow method is applied.
 
-![image alt text](image_24.png)
+![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jb3zzenxj30as09yt8v.jpg)
 
 Elbow is bending at k=6. Therefore, k = 6 is the best number for K-means in this case.
 
- ![image alt text](image_25.png)
+![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jb4d6b69j30c303n74z.jpg)
 
 6-cluster solution
 
-![image alt text](image_26.png)
+![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jb4nc850j30bi0aiaap.jpg)
 
 6-cluster solution 2
 
@@ -314,21 +317,21 @@ Cluster 6. Customers with middle age, medium income and medium spending score.
 
 ii) Segmentation using income and spending score.
 
-In order to find the best K for K-means algorithm, elbow method is applied.![image alt text](image_27.png)
+In order to find the best K for K-means algorithm, elbow method is applied.![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jb5dov7vj30a2092glq.jpg)
+
 
 Elbow is bending at k=5. Therefore, k = 5 is the best number for K-means in this case.
 
  
 
-![image alt text](image_28.png)
+![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jb5qf5qtj309t032t92.jpg)
+5-cluster solution
+
+![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jb61q4vpj30ah09jmxe.jpg)
 
 5-cluster solution
 
- ![image alt text](image_29.png)
-
-5-cluster solution
-
-![image alt text](image_30.png)
+![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jb6bu94oj30bf0adt9p.jpg)
 
 5-cluster solution
 
