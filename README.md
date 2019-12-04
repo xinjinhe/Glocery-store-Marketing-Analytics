@@ -1,3 +1,4 @@
+
 **Producing an online grocery app**
 
 
@@ -213,7 +214,8 @@ It is clear that the target age groups are 30-35 for both female and male. Women
 
 * We choose 4 clusters
 
-![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jb06k1zvj30gc0ra74y.jpg)
+<img src="https://tva1.sinaimg.cn/large/006tNbRwgy1g9jb06k1zvj30gc0ra74y.jpg" width="50" hegiht="30" align=center />
+
 ![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jb0jksa2j30tg0lqmy8.jpg)
 
 * Cluster solutions:
