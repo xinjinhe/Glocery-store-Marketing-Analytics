@@ -359,13 +359,14 @@ Cluster 4. Customers with low income and low spending score.
 
 Cluster 5. Customers with high income and low spending score.
 
-4. **Conclusion**
+---
+## Conclusion ##
 
-1.  We are supposed to stock on Tuesday, Wednesday or Thursday since orders these days are less than other days (except fresh food includes fruits, vegetables, etc. should be stocked every day). Meanwhile, the stocking time should between 0 a.m. to 6 a.m.
+***1.  We are supposed to stock on Tuesday, Wednesday or Thursday since orders these days are less than other days (except fresh food includes fruits, vegetables, etc. should be stocked every day). Meanwhile, the stocking time should between 0 a.m. to 6 a.m.***
 
-2. Since most of the people prefer to place orders once a month, we can take sales promotion on each week to change customers’ online shopping habits and attract them to buy more times in one month than before.
+***2. Since most of the people prefer to place orders once a month, we can take sales promotion on each week to change customers’ online shopping habits and attract them to buy more times in one month than before.***
 
-3. More than half of customers will reorder the products. So we can target on the regular customer.
+***3. More than half of customers will reorder the products. So we can target on the regular customer.***
 
-4. From a business perspective, our app should focus on young and middle age women as  particular target group so as to provide the best experience for them. We can also make better marketing strategy based on the understanding of customers’ preference. For example, there is a group of customers with high income but low spending score. In order to boost demand and stimulate consumption, company may take them into account and construct a target marketing approach to fit their interest. In the cluster analysis of this report, we only use 2 or 3 variables due to simplicity of the dataset. However, in reality, there could be more variables which can be included in our cluster analysis to gain a more meaningful insight. 
+***4. From a business perspective, our app should focus on young and middle age women as  particular target group so as to provide the best experience for them. We can also make better marketing strategy based on the understanding of customers’ preference. For example, there is a group of customers with high income but low spending score. In order to boost demand and stimulate consumption, company may take them into account and construct a target marketing approach to fit their interest. In the cluster analysis of this report, we only use 2 or 3 variables due to simplicity of the dataset. However, in reality, there could be more variables which can be included in our cluster analysis to gain a more meaningful insight.*** 
 
