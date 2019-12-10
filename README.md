@@ -15,6 +15,8 @@ In order to produce an online grocery app, we are going to know about the produc
 
 By clustering the users, we can take accurate advertising of products and sales promotion. At the same time, it is significant for an online grocery to optimize the quantity and quality of product stock and make appropriate delivery strategies by achieving customers’ need of products.
 
+---
+
 ## B. Methods
 
    #### Target population ####
@@ -59,6 +61,8 @@ After making a new dataset with department components in orders, we did factor a
 
 In this part, customer data will be divided into groups of individuals that are similar in age, annual income or spending score. A deeper understanding of our target population and  customer’s preferences can be obtained after clustering analysis.
 
+---
+
 ## C. Results
 
    ### 1.  Orders exploratory analysis
@@ -77,7 +81,7 @@ People always place orders between 8 a.m. and 9 p.m.
 
 ##### Order day of week #####
 
-![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9rus14iffj30cc0a6gm5.jpg)
+![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9rvl8hhxpj30bb097mx5.jpg)
 
 Most of the people place orders on Sunday.
 
@@ -85,7 +89,7 @@ Most of the people place orders on Sunday.
 
 #####   When do customers order again? #####
 
-![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jarfehfoj30jf0g13z3.jpg)
+![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9rus14iffj30cc0a6gm5.jpg)
 
 Some people prefer to do online shopping each week. But most of the people prefer to place an order again after one month.
 
@@ -233,6 +237,8 @@ It is clear that the target age groups are 30-35 for both female and male. Women
 
 ![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9ruki4pv2j30ce09n0ti.jpg)
 
+---
+
 **(Ward’s method)**
 
 * Determine number of clusters through plotting:
@@ -258,7 +264,7 @@ It is clear that the target age groups are 30-35 for both female and male. Women
 
 * Finally, we plot out the values under different clusters to intuitively visualize the result:
 
-![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jb3kbt61j30vm0regmz.jpg)
+![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9rvfakuggj30bx0ac0tn.jpg)
 
 * Conclusions on hierarchical cluster analysis:
 
@@ -276,8 +282,8 @@ It is clear that the target age groups are 30-35 for both female and male. Women
 
     * C5: population with middle age, high income but low spending score;
 
-
-**(K-means cluster analysis) **
+----
+**(K-means cluster analysis)**
 
 The K-means algorithm involves:
 
