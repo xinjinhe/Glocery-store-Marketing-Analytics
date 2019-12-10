@@ -1,87 +1,89 @@
 
-**Producing an online grocery app**
+# Producing an online grocery app #
 
 
 
-1. **Introduction**
+ ## A. Introduction ##
 
-    * Rationale
+   #### Rationale ####
 
 Due to the popularity of online shopping and the progress of logistics, online grocery will be more and more feasible in our daily life. 
 
-    * Objectives of the study
+   * Objectives of the study 
 
 In order to produce an online grocery app, we are going to know about the product preference of our target users. From this anticipatory research, the profit will be maximized and the cost will be minimized. 
 
 By clustering the users, we can take accurate advertising of products and sales promotion. At the same time, it is significant for an online grocery to optimize the quantity and quality of product stock and make appropriate delivery strategies by achieving customers’ need of products.
 
-2. **Methods**
+## B. Methods
 
-    * Target population
+   #### Target population ####
 
 The users who are usually shopping online and have the ability to buy is our targeting object of study. Meanwhile, we focus on the target population from 18 to 70 years old.
 
-    * Data source
+   #### Data source ####
 
 Kaggle provides us with several useful datasets from a similar online grocery *Instacart*. One dataset is about customer characteristics. And the other datasets are related to products and describe customers’ orders over time. Because *Instacart *and our app are the same type, we will directly use their dataset to analyze.
 
-    * Sampling method
+   #### Sampling method ####
 
 The original training dataset is collected from random sampling. Since this dataset has been classified by the day of the week and time of orders, we can make assumptions that we can achieve 700 weekly orders(about 100 orders per day) before we did factor analysis.
 
-    * Data structure and variables of interest
+   #### Data structure and variables of interest ####
 
 We have four main datasets to do analysis.
 
-1.  Mall_Customers: CustomerID, Gender, Age, Annual Income($k), Spending Score(1-100 reflects customers’ consumption level)
+##### 1).  Mall_Customers: #####
+CustomerID, Gender, Age, Annual Income($k), Spending Score(1-100 reflects customers’ consumption level)
 
-2. Orders: order_id, user_id, order_number, order_dow(day of week), order_hour(hours of day), days_since_prior_order
+##### 2). Orders: #####
+order_id, user_id, order_number, order_dow(day of week), order_hour(hours of day), days_since_prior_order 
 
-3. We merged datasets Order_products_train(information about products in orders) and Products(products’ information). Finally, we got the training datasets with order_id, product_id, product_name, aisle_id, department_id, add_to_cart_order, reordered(0 or 1).
+###### 3). We merged datasets Order_products_train(information about products in orders) and Products(products’ information). Finally, we got the training datasets with order_id, product_id, product_name, aisle_id, department_id, add_to_cart_order, reordered(0 or 1). ######
 
-    * Statistical methods
+  #### Statistical methods ####
 
-1. Order exploratory analysis
+##### 1).  Order exploratory analysis #####
 
 In order to have initial understandings of the data, we did simple exploratory analyses on the day of the week, hours of the day and reorder time. The results are shown by the dendrogram.
 
-2. Product exploratory analysis
+##### 2).  Product exploratory analysis #####
 
 Similarly, we did simple exploratory analyses on items in one order by last add_to_cart_order, bestseller, and reorder probability. The results are also shown by the dendrogram.
 
-3. Factor analysis
+##### 3).  Factor analysis #####
 
 After making a new dataset with department components in orders, we did factor analysis. We tried to find certain features by continuous variables to represent the categories of products. Since each feature is the projection of all the points of the original dataset, hence we can conclude that features obtained from PCA are representative of the dataset.
 
-4. Customer exploratory analysis and Cluster analysis
+##### 4). Customer exploratory analysis and Cluster analysis #####
 
 In this part, customer data will be divided into groups of individuals that are similar in age, annual income or spending score. A deeper understanding of our target population and  customer’s preferences can be obtained after clustering analysis.
 
-3. **Results**
+## C. Results
 
-**1. **Orders exploratory analysis
+   ### 1.  Orders exploratory analysis
 
-* Summary statistics 
+##### Summary statistics #####
 
 ![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jaok6szhj30yq0duac4.jpg)
 
 
-*  Order hours of the day
+##### Order hours of the day #####
 
 
 ![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jaq73sqxj30bl09f3yn.jpg)
 
 People always place orders between 8 a.m. and 9 p.m.
 
-* Order day of week
+##### Order day of week #####
 
-![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jar2gcgdj30bb097mx5.jpg)
+![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9rus14iffj30cc0a6gm5.jpg)
 
 Most of the people place orders on Sunday.
 
  
 
-*   When do customers order again?
+#####   When do customers order again? #####
 
 ![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jarfehfoj30jf0g13z3.jpg)
 
@@ -89,19 +91,19 @@ Some people prefer to do online shopping each week. But most of the people prefe
 
  
 
-**2.** Products exploratory analysis
+### 2. Products exploratory analysis
 
-* Summary statistics
+#### Summary statistics ####
 
 ![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jas7q49sj310m08lmye.jpg)
 
-*  How many items do people buy in one order?
+##### How many items do people buy in one order? #####
 
 ![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jat26umij30b609faa9.jpg)
 
 People always buy approximately 5 items once.
 
-*  Bestseller
+##### Bestseller #####
 
 ![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jatkzvf6j30cf0agjru.jpg)
 
@@ -109,15 +111,14 @@ As is shown in the picture, Banana is the bestseller. Since fruits and vegetable
 
  
 
-* Reorder probability
+##### Reorder probability #####
 
 828824/(555793+828824)≈0.5985944
 
 More than half of the products will be reordered.
 
  
-
-**3.   **Product factor analysis
+### 3. Product factor analysis ###
 
 ![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jau9adv3j31120b6dhk.jpg)
 
@@ -183,7 +184,7 @@ Frozen on its own
 
 ![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jaxw7auoj30du085wfa.jpg)
 
-**4. **Customer segmentation cluster analysis
+### 4. Customer segmentation cluster analysis #####
 
 * Exploratory analysis
 
@@ -214,9 +215,9 @@ It is clear that the target age groups are 30-35 for both female and male. Women
 
 * We choose 4 clusters
 
-<img src="https://tva1.sinaimg.cn/large/006tNbRwgy1g9jb06k1zvj30gc0ra74y.jpg" width="50" hegiht="30" align=center />
 
-![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jb0jksa2j30tg0lqmy8.jpg)
+![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9ruew42qqj306w0bjaah.jpg)
+![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9ruhtr0cvj30g20but9u.jpg)
 
 * Cluster solutions:
 
@@ -226,11 +227,11 @@ It is clear that the target age groups are 30-35 for both female and male. Women
 
     * Means and standardized values for the five clustered analysis:
 
-![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jb0xg35mj30lc0acq3n.jpg)
+![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9ruj5rdt0j30bv05rgm7.jpg)
 
 * Finally, we plot out the values under different clusters to intuitively visualize the result:
 
-![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jb18l607j30z80reta4.jpg)
+![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9ruki4pv2j30ce09n0ti.jpg)
 
 **(Ward’s method)**
 
@@ -240,8 +241,8 @@ It is clear that the target age groups are 30-35 for both female and male. Women
 
 * Plot of dendrogram 
 
-![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jb1rt7nzj30py0r4aat.jpg)
-![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jb23nm4dj30q40pmq3r.jpg)
+![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9ruloe8ggj30ck0d40t8.jpg)
+![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9rumbdfmoj30by0bqwf1.jpg)
 
 * Cluster solution:
 
@@ -249,11 +250,11 @@ It is clear that the target age groups are 30-35 for both female and male. Women
 
 * We derive the number of trials in cluster C1-C5 is: 23, 20, 84, 38, 35;
 
-![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jb2myelbj30m40f074v.jpg)
+![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9rumtm5vmj30bv0823z0.jpg)
 
 * Means and standardized values for the five clustered analysis: 
 
-![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jb2z5vu9j30rq0c6dgr.jpg)
+![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9runbedf5j30bz0590t8.jpg)
 
 * Finally, we plot out the values under different clusters to intuitively visualize the result:
 
@@ -274,6 +275,7 @@ It is clear that the target age groups are 30-35 for both female and male. Women
     * C4: population with young age, high average income and high spending score;
 
     * C5: population with middle age, high income but low spending score;
+
 
 **(K-means cluster analysis) **
 
@@ -303,7 +305,7 @@ Elbow is bending at k=6. Therefore, k = 6 is the best number for K-means in this
 
 6-cluster solution 2
 
-This plot shows the characteristic of each cluster. A sensible interpretation for the customer segmentation can be made based on this result:
+   * This plot shows the characteristic of each cluster. A sensible interpretation for the customer segmentation can be made based on this result:
 
 Cluster 1. Customers with middle age, lower income and lower spending score.
 
@@ -319,7 +321,7 @@ Cluster 6. Customers with middle age, medium income and medium spending score.
 
 ii) Segmentation using income and spending score.
 
-In order to find the best K for K-means algorithm, elbow method is applied.![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jb5dov7vj30a2092glq.jpg)
+   * In order to find the best K for K-means algorithm, elbow method is applied.![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9jb5dov7vj30a2092glq.jpg)
 
 
 Elbow is bending at k=5. Therefore, k = 5 is the best number for K-means in this case.
@@ -337,7 +339,7 @@ Elbow is bending at k=5. Therefore, k = 5 is the best number for K-means in this
 
 5-cluster solution
 
-These plots show the characteristic of each cluster. A sensible interpretation for the customer segmentation can be made based on this result:
+   * These plots show the characteristic of each cluster. A sensible interpretation for the customer segmentation can be made based on this result:
 
  
 
