@@ -237,7 +237,6 @@ It is clear that the target age groups are 30-35 for both female and male. Women
 
 ![estimator](https://tva1.sinaimg.cn/large/006tNbRwgy1g9ruki4pv2j30ce09n0ti.jpg)
 
----
 
 **(Ward’s method)**
 
